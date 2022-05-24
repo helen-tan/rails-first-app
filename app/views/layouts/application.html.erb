@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <!-- Navbar: Applied to every page (yielded to) -->
+    <div class="navbar">
+      <p>This is a logo. This is a navbar</p>
+      <%= link_to "Home", root_path%>
+      <%= link_to "About Us", about_path%>
+      <%= link_to "Contact", contact_path%>
+    </div>
+    <!-- The view is loaded inside the layout here -->
     <%= yield %>
+    <!-- Footer -->
+    <div class="footer">This is a footer</div>
   </body>
 </html>
